@@ -1,2 +1,3 @@
 # giftastic
-An example of ajax http get calls 
+
+An example of ajax http get calls
