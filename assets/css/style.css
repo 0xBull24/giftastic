@@ -1,3 +1,12 @@
-.container {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.row, .searchitems {
+    margin: 0 auto;
+}
+
+.container, .container-fluid {
     border: 1px solid black;
 }
