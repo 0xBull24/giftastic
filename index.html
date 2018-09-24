@@ -1,44 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Darron's Giftastic App</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
+</head>
 
-  <body>
-      <!-- Gif to search on -->
+<body>
+    <!-- Gif to search on -->
     <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="searchitems">array and other choices will go here</div>
-        </div>
+        <div class="topics"></div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid bottom">
         <div class="row">
             <div class="col-8 gif-side">
-                <div class="gifs">gifs</div>
+                <div class="gifs"></div>
             </div>
             <div class="col-4 search-side">
-                <label for="searchbar">Add an animal</label>
-                <input required autofocus type="search" placeholder="gif to search for ..." id='searchbar'>
-                <button id="search"><i class="fas fa-search"> Search</i></button>
+                <h1><label for="searchbar">Search for a new image</label></h1>
+                <br>
+                <div class="form-group">
+                    <input required autofocus type="text" placeholder="gif to search for ..." id='searchbar' class="shadow-sm">
+                    <button id="search" type="submit" class="shadow-sm"><i class="fas fa-search"></i> Search</button>
+                </div>
             </div>
         </div>
-    </div> 
-  </body>
+    </div>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script type="module" src="./assets/js/app.js"></script>
-    <script type="module" src="./assets/js/secret.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+<script type="module" src="./assets/js/app.js"></script>
+
 </html>

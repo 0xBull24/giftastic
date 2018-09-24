@@ -1,12 +1,27 @@
-html, body {
-    margin: 0;
-    padding: 0;
+.row {
+    height: 100vh;
 }
 
-.row, .searchitems {
-    margin: 0 auto;
+.topics {
+    text-align: center;
+    padding: 20px;
 }
 
-.container, .container-fluid {
-    border: 1px solid black;
+.gifs {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Design backgound */
+.container-fluid {
+    background-color: #E8871E;
+}
+
+.gif-side {
+    background-color: #BAD4AA;
+}
+
+.search-side {
+    text-align: center;
+    background-color: #D4D4AA;
 }
