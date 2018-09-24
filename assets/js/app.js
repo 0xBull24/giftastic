@@ -35,7 +35,7 @@ const giphyAPI = {
                             `<div>
                             <p class='rating'> Rating ${element.rating}
                             <br>
-                            <img class='gif-images' data-still='${stillImage}' data-active='${active}' src="${embeded}">`
+                            <img class='gif-images' data-still='${stillImage}' data-active='${active}' src="${embeded}" style="">`
                         )
                     } else {
                         badTerm++
@@ -51,8 +51,11 @@ const giphyAPI = {
 
     activeGifs: () => {
         $(document).on('click', '.gif-images', function () {
-            console.log($(this).attr('data-still'))
-            console.log(`We clicking`)
+            if ($(this).attr('data-still') === $(this).attr('src')) {
+                $(this).attr('src', $(this).attr('data-active'))
+            } else {
+                $(this).attr('src', $(this).attr('data-still'))
+            }
         })
     }
 }
