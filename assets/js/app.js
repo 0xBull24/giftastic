@@ -9,7 +9,6 @@ const giphyAPI = {
     apikey: 'Ffq6mPxFygiecgRCtKpKs8v6svdNOHII',
 
     loadTopics: () => {
-        console.log(`Loading new topics`)
         $('.topics').empty();
         giphyAPI.topics.forEach(element => {
             $('.topics').append(`<button type="button" class="btn btn-light mr-3 shadow-sm"> ${element}`)
@@ -70,7 +69,6 @@ $(document).ready(event => {
 
     // Search button will add topic
     $('#search').click((event) => {
-        console.log(`Grabbing search info`)
         event.preventDefault();
         giphyAPI.topics.push($('#searchbar').val().trim())
         giphyAPI.loadTopics()
